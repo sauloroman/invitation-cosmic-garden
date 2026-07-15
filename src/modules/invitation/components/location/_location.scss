@@ -1,0 +1,107 @@
+.location {
+    background-color: $color-primary-200;
+    position: relative;
+    padding: 12rem 0;
+
+    &__background {
+        opacity: .8;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+
+        i {
+            font-size: 2rem;
+        }
+    }
+
+    &__container {
+        position: relative;
+        z-index: 2;
+    }
+
+    &__message {
+        text-align: center;
+        width: 85%;
+        margin: 3rem auto 0;
+        padding: 0 2rem;
+
+        p {
+            font-size: 1.4rem;
+            line-height: 1.8;
+            color: $color-primary-800;
+        }
+    }
+
+    &__sections {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        margin-top: 5rem;
+    }
+
+
+
+    &__card {
+        margin: 0 auto;
+        width: 80%;
+        padding: 2rem;
+        border: 1px solid rgba($color-tertiary-800, .6);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.6rem;
+        background-color: $color-bg;
+        opacity: .9;
+        text-align: center;
+        @include mixins.folded-corners(2rem, 'both');
+
+        &-type {
+            color: $color-secondary-500;
+            font-family: 'Pinyon Script', cursive;
+            font-size: 2.4rem;
+        }
+
+        &-title {
+            font-size: 3rem;
+            font-weight: 300;
+            line-height: 1.2;
+        }
+
+        &-address {
+            font-size: 1.6rem;
+            color: $color-neutral-700;
+        }
+
+        &-hour {
+            font-size: 3rem;
+            font-weight: 400;
+            color: $color-tertiary-800;
+        }
+
+        &-button {
+            margin-top: 1rem;
+            width: 100%;
+
+            button {
+                width: 100%;
+            }
+        }
+
+    }
+
+
+
+}

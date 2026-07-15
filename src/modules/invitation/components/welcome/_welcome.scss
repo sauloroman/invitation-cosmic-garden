@@ -1,0 +1,20 @@
+.welcome {
+
+    background-color: $color-primary-200;
+    padding: 5rem 0;
+
+    &__container {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__message {
+        width: 90%;
+        margin-top: 1rem;
+        color: $color-neutral-800;
+    }
+}
