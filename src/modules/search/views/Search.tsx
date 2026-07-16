@@ -46,6 +46,10 @@ export const Search: React.FC = () => {
                                 className='search__input' id='keyPass' type="text" placeholder='Ej. 1234' />
                             <span className='search__input-error'>{errors.keyPass?.message}</span>
                         </div>
+                        <div className="search__badge">
+                            <i className='bx bx-key' />
+                            <span>Prueba ingresando con la clave: <strong>prueba123</strong></span>
+                        </div>
                         <Button type="submit" disabled={isLoading} className='search__button' variant='primary' action={() => { }}>
                             {isLoading ? 'Buscando...' : 'Buscar'}
                         </Button>

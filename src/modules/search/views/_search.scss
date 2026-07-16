@@ -72,7 +72,31 @@
     }
 
     &__input-container {
-        margin-bottom: 2rem;
+        margin-bottom: 1.2rem;
+    }
+
+    &__badge {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.6rem;
+        padding: 0.8rem 1.2rem;
+        background-color: rgba(179, 20, 20, 0.08);
+        border: 1px solid rgba(179, 20, 20, 0.15);
+        color: rgb(179, 20, 20);
+        border-radius: 8px;
+        font-size: 1.2rem;
+        margin-bottom: 1.8rem;
+        width: 100%;
+        box-sizing: border-box;
+
+        i {
+            font-size: 1.4rem;
+        }
+
+        strong {
+            font-weight: 700;
+        }
     }
 
     &__input-label {
